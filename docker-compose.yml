@@ -14,8 +14,7 @@ services:
   caddy:
     image: caddy
     ports:
-      - 80:80
+      - 30080:80
     volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
       - ./files:/var/www/html/files
     restart: always
