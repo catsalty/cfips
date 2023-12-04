@@ -8,7 +8,7 @@ telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
 group_id = os.environ.get('GROUP_ID')
 
 # 文件存储目录
-file_directory = '/path/to/files'
+file_directory = '/var/www/html/files'
 
 # 重命名后的文件名
 new_file_name = 'cfip.txt'
