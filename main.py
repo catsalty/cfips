@@ -1,5 +1,5 @@
 import os
-from telegram.ext import Updater, MessageHandler, Filters
+from telegram.ext import Updater, MessageHandler, filters
 
 # 从环境变量中获取 Telegram 机器人的令牌
 telegram_token = os.environ.get('TELEGRAM_BOT_TOKEN')
@@ -30,7 +30,7 @@ def main():
     dispatcher = updater.dispatcher
 
     # 注册消息处理程序
-    message_handler = MessageHandler(Filters.document, handle_message)
+    message_handler = MessageHandler(filters.document, handle_message)
     dispatcher.add_handler(message_handler)
 
     # 启动 Telegram 机器人
